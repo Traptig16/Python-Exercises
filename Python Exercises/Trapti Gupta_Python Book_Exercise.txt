@@ -1,0 +1,1118 @@
+--Exercise 1(page-37)--
+
+1.Make your script print another line.
+print("print another line ")
+output:-print another line 
+
+2.Make your script print only one of the lines.
+print("My name is Trapti GUpta")
+#print("My friends name is tuti")
+
+3. Put a # (octothorpe) character at the beginning of a line. What did it do? Try to find out what
+this character does.
+the # character is used to denote a comment. When you place the # character at the beginning of a line, it indicates that the line is a comment and should be ignored by the Python interpreter.
+
+
+--EXERCISE 2(PAGE-41)--
+
+1. Find out if you were right about what the # character does and make sure you know what it’s
+called (octothorpe or pound character).
+The # character in Python is commonly known as the "hash" character, "hash symbol," or "pound sign" in certain regions.The # character is used to start a comment in Python. When a line begins with #, it indicates that the entire line is a comment and will be ignored by the Python interpreter. 
+
+2. Take your ex2.py file and review each line going backward. Start at the last line, and check each
+word in reverse against what you should have typed.
+9 print("This will run.")  # No issues
+8 # print("This won't run.")  # Commented out, won't be executed
+7 # You can also use a comment to "disable" or comment out code:
+6 # and the comment after is ignored
+5 print("I could have code like this.")  # No issues
+
+3. Did you find more mistakes? Fix them.
+No mistakes found in the code.
+
+4. Read what you typed above out loud, including saying each character by its name. Did you find
+more mistakes? Fix them.
+Reading the typed code out loud, character by character:
+"I could have code like this."
+"hash space You space can space also space use space a space comment space to space disable space or space comment space out space code"
+"hash space and space the space comment space after space is space ignored"
+"hash space print space This space won't space run"
+"print space This space will space run"
+
+No mistakes found in the code while reading it out loud.
+
+--EXERCISE 3(PAGE-44)--
+
+1. Above each line, use the # to write a comment to yourself explaining what the line does.
+$ python3.6 ex3.py
+I will now count my chickens:
+#This line counts the chickens of hens and roosters Individually.
+Hens 30.0
+Roosters 97
+Now I will count the eggs:
+#This line counts the total numberof eggs.
+6.75
+Is it true that 3 + 2 < 5 - 7?
+False
+#It checks if the left-hand side is strictly less than the right-hand side. In this case, 5 is not less than -2, so the result of the expression is False.
+What is 3 + 2? 5
+#Its an addition or two numbers.
+What is 5 - 7? -2
+Oh, that's why it's False.
+How about some more.
+Is it greater? True
+Is it greater or equal? True
+Is it less or equal? False
+#This is the type of Conditional statement.
+
+2. Remember in Exercise 0 when you started python3.6? Start python3.6 this way again and, using
+the math operators, use Python as a calculator.
+Type "help", "copyright", "credits" or "license" for more information. 2 + 3  # Addition
+5
+ 5 - 2  # Subtraction
+3
+ 4 * 6  # Multiplication
+24
+ 10 / 3  # Division
+3.3333333333333335
+ 2 ** 4  # Exponentiation
+16
+ 10 // 3  # Floor division
+3
+ 10 % 3  # Modulo
+1
+3. Find something you need to calculate and write a new .py file that does it.
+# calculate_area.py
+
+length = 10
+width = 5
+area = length * width
+
+print("The area of the rectangle is:", area)
+
+4. Rewrite ex3.py to use floating point numbers so it’s more accurate. 20.0 is floating point.
+# ex3.py
+
+print("I will now count my chickens:")
+
+print("Hens:", 25.0 + 30.0 / 6.0)
+print("Roosters:", 100.0 - 25.0 * 3.0 % 4.0)
+
+print("Now I will count the eggs:")
+
+print(3.0 + 2.0 + 1.0 - 5.0 + 4.0 % 2.0 - 1.0 / 4.0 + 6.0)
+
+print("Is it true that 3.0 + 2.0 < 5.0 - 7.0?")
+
+print(3.0 + 2.0 < 5.0 - 7.0)
+
+print("What is 3.0 + 2.0?", 3.0 + 2.0)
+print("What is 5.0 - 7.0?", 5.0 - 7.0)
+
+print("Oh, that's why it's False.")
+
+print("How about some more.")
+
+print("Is it greater?", 5.0 > -2.0)
+print("Is it greater or equal?", 5.0 >= -2.0)
+print("Is it less or equal?", 5.0 <= -2.0)
+
+
+--EXERCISE 4(PAGE-47)--
+
+1. I used 4.0 for space_in_a_car, but is that necessary? What happens if it’s just 4?
+- Using 4 without a decimal point represents an integer, whereas using 4.0 with a decimal point represents a floating-point number (a decimal number).
+2. Remember that 4.0 is a floating point number. It’s just a number with a decimal point, and
+you need 4.0 instead of just 4 so that it is floating point.
+- Using 4.0 represents a floating-point number, which is a number with a decimal point. Using 4 without the decimal point would represent an integer. 
+3. Write comments above each of the variable assignments.
+Traceback ( most recent c a l l l a s t ) :
+F i l e ”ex4 . py ” , li n e 8 , in <module>
+average_passengers_per_car = ca r _pool _capaci t y / passenger
+NameError : name ’ ca r _pool _capaci t y ’ i s not defined
+#  It is the variable assigned(average_passengers_per_car) which stoes the division result of(ca r _pool _capaci t y / passenger).
+4. Make sure you know what = is called (equals) and that its purpose is to give data (numbers, strings,
+etc.) names (cars_driven, passengers).
+5. Remember that _ is an underscore character.
+6. Try running python3.6 from the Terminal as a calculator like you did before, and use variable
+names to do your calculations. Popular variable names are also i, x, and j
+ 
+--EXERCISE 5(PAGE-51)--
+
+1. Change all the variables so there is no my_ in front of each one. Make sure you change the name
+everywhere, not just where you used = to set them.
+-zed_height = 74
+zed_weight = 180
+zed_eyes = 'Blue'
+zed_hair = 'Brown'
+zed_teeth = 'Usually White depending on coffee'
+
+zed_total = zed_height + zed_weight + 35
+
+2. Try to write some variables that convert the inches and pounds to centimeters and kilograms. Do
+not just type in the measurements. Work out the math in Python.
+inch_to_cm = 2.54
+pound_to_kg = 0.45359237
+
+zed_height_inches = 74
+zed_weight_pounds = 180
+
+zed_height_cm = zed_height_inches * inch_to_cm
+zed_weight_kg = zed_weight_pounds * pound_to_kg
+
+print(zed_height_cm)
+print(zed_weight_kg)
+
+
+--EXERCISE 6(PAGE-53)--
+
+# Assigns the value 10 to the variable 'types_of_people'
+types_of_people = 10
+
+# Creates a string with a formatted expression, using the value of 'types_of_people'
+x = f"There are {types_of_people} types of people."
+
+# Assigns the string "binary" to the variable 'binary'
+binary = "binary"
+
+# Assigns the string "don't" to the variable 'do_not'
+do_not = "don't"
+
+# Creates a string with multiple formatted expressions, using the values of 'binary' and 'do_not'
+y = f"Those who know {binary} and those who {do_not}."
+
+# Prints the value of 'x'
+print(x)
+
+# Prints the value of 'y'
+print(y)
+
+# Creates a string with a formatted expression, using the value of 'x'
+print(f"I said: {x}")
+
+# Creates a string with a formatted expression, using the value of 'y'
+print(f"I also said: '{y}'")
+
+# Assigns the boolean value False to the variable 'hilarious'
+hilarious = False
+
+# Creates a string with a placeholder for a future value
+joke_evaluation = "Isn't that joke so funny?! {}"
+
+# Prints the value of 'joke_evaluation' by formatting it with the value of 'hilarious'
+print(joke_evaluation.format(hilarious))
+
+# Assigns the string "This is the left side of..." to the variable 'w'
+w = "This is the left side of..."
+
+# Assigns the string "a string with a right side." to the variable 'e'
+e = "a string with a right side."
+
+# Concatenates the values of 'w' and 'e' and prints the result
+print(w + e)
+
+
+2. Find all the places where a string is put inside a string.
+Line 2: x = f"There are {types_of_people} types of people."
+Line 6: y = f"Those who know {binary} and those who {do_not}."
+Line 12: print(f"I also said: '{y}'")
+Line 11: print(f"I said: {x}")
+Line 15: joke_evaluation = "Isn't that joke so funny?! {}"
+3. Are you sure there are only four places? How do you know? Maybe I like lying.
+- There are five places where a string is put inside the string.
+
+4. Explain why adding the two strings w and e with + makes a longer string
+- '+' operator to concatenate two strings, such as w + e, it combines the characters from both strings into a single, longer string.
+
+--EXERCISE 7(PAGE-57)--
+
+1. Go back through and write a comment on what each line does.
+print("Mary had a little lamb."): This line prints the text "Mary had a little lamb.".
+print("Its fleece was white as {}.".format('snow')): This line uses string formatting to insert the word "snow" into the sentence and then prints the resulting string: "Its fleece was white as snow."
+print("And everywhere that Mary went."): This line prints the text "And everywhere that Mary went.".
+print("." * 10): This line multiplies the string "." by 10.It prints a line consisting of ten dots.
+6-17. These lines assign individual letters to the variables end1 to end12.
+print(end1 + end2 + end3 + end4 + end5 + end6, end=' '): This line concatenates the values of the variables end1 to end6 together (resulting in "Cheese") and prints it. The end=' ' parameter specifies that a space should be printed at the end instead of a newline character, allowing the next print statement to continue on the same line.
+print(end7 + end8 + end9 + end10 + end11 + end12): This line concatenates the values of the variables end7 to end12 together (resulting in "Burger") and prints it. Since there is no end parameter specified, a newline character is printed at the end, creating a new line after the previous print statement.
+
+2.. Read each one backward or out loud to find your errors.
+print("Mary had a little lamb."): This line prints the text "Mary had a little lamb.". No errors here.
+The corrected line would be: print("Its fleece was white as {}.".format('snow')). This line uses string formatting to insert the word "snow" into the sentence and then prints the resulting string: "Its fleece was white as snow."
+print("And everywhere that Mary went."): This line prints the text "And everywhere that Mary went.". No errors here.
+print("." * 10): This line multiplies the string "." by 10, resulting in "..........", and then prints it. It prints a line consisting of ten dots. No errors here.
+6-17. These lines assign individual letters to the variables end1 to end12. No errors here.
+print(end1 + end2 + end3 + end4 + end5 + end6, end=' '): This line concatenates the values of the variables end1 to end6 together (resulting in "Cheese") and prints it. 
+There is an error in this line. It seems the period at the end is mistakenly included. The corrected line would be: print(end7 + end8 + end9 + end10 + end11 + end12). This line concatenates the values of the variables end7 to end12 together (resulting in "Burger") and prints it. 
+
+--EXERCISE-8(PAGE-60)--
+
+1.formatter = "{} {} {} {}": This line assigns a string with four placeholders to the variable formatter. 
+print(formatter.format(1, 2, 3, 4)): This line uses the format() method on the formatter string and passes four arguments: 1, 2, 3, and 4. The placeholders in formatter are replaced with these values, and the resulting string is printed. Output: "1 2 3 4"
+print(formatter.format("one", "two", "three", "four")): This line uses the format() method on formatter and passes four string arguments: "one", "two", "three", and "four". 
+print(formatter.format(True, False, False, True)): This line uses the format() method on formatter and passes four boolean arguments: True, False, False, and True. The placeholders in formatter are replaced with these values, and the resulting string is printed. Output: "True False False True"
+print(formatter.format(formatter, formatter, formatter, formatter)): This line uses the format() method on formatter and passes the formatter string itself as all four arguments. Each placeholder in formatter is replaced with the value of formatter, resulting in the same string being repeated four times. Output: "{} {} {} {}"
+7-11. These lines form a multi-line statement using parentheses to group the arguments passed to formatter.format(). Each line contains a string argument. The format() method is called on formatter with these arguments, and the placeholders are replaced with the corresponding values. Each line represents a separate argument, and the resulting string is printed.
+The start of the multi-line statement.
+The first string argument: "Try your"
+The second string argument: "Own text here"
+The third string argument: "Maybe a poem"
+The fourth string argument: "Or a song about fear"
+ 
+--EXERCISE-9(PAGE-63)--
+
+days = "Mon Tue Wed Thu Fri Sat Sun": This line assigns a string containing the names of the days of the week, separated by spaces, to the variable days.
+months = "Jan\nFeb\nMar\nApr\nMay\nJun\nJul\nAug": This line assigns a string containing the names of the months, each on a new line, to the variable months. The escape sequence \n is used to represent a newline character.
+print("Here are the days: ", days): This line uses the print() function to display the string "Here are the days: " followed by the value of the variable days. The two arguments are separated by a comma, which results in them being printed with a space in between.
+print("Here are the months: ", months): This line uses the print() function to display the string "Here are the months: " 
+This line starts a multi-line string using triple quotes ("""). 
+This line is part of the multi-line string and contains the text "There's something going on here."
+This line is also part of the multi-line string and contains the text "With the three double-quotes."
+This line is part of the multi-line string and contains the text "We'll be able to type as much as we like."
+This line is also part of the multi-line string and contains the text "Even 4 lines if we want, or 5, or 6."
+This line ends the multi-line string by using triple quotes ("""). 
+
+--EXERCISE-10(PAGE-66)--
+
+1.Memorize all the escape sequences by putting them on flash cards.
+\n: Newline (line feed)
+\r: Carriage return
+\t: Tab
+\\: Backslash
+\': Single quote
+\": Double quote
+\b: Backspace
+\f: Form feed
+\v: Vertical tab
+
+2.Use ''' (triple-single-quote) instead. Can you see why you might use that instead of """?
+Yes, you can use ''' (triple-single-quote) instead of """ (triple-double-quote) to create multi-line strings in Python.
+
+3.. Combine escape sequences and format strings to create a more complex format.
+name = "Trapti"
+age = 21
+city = "Agra"
+
+output = "Name: {}\nAge: {}\nCity: {}".format(name, age, city)
+print(output)
+
+--EXERCISE-11(PAGE-69)--
+
+1.Go online and find out what Python’s input does.
+In Python, the input() function is used to interactively accept input from the user via the console or command line. When input() is called, it displays a prompt to the user, waits for them to enter a value, and then returns the entered value as a string.
+
+2. Can you find other ways to use it? Try some of the samples you find.
+Example:-num1 = int(input("Enter the first number: "))
+num2 = int(input("Enter the second number: "))
+result = num1 + num2
+print("The sum is:", result)
+
+3. Write another ”form” like this to ask some other questions.
+name = input("Enter your full name: ")
+age = input("Enter your age: ")
+email = input("Enter your email address: ")
+phone = input("Enter your phone number: ")
+print("Name:", name)
+print("Age:", age)
+print("Email:", email)
+print("Phone:", phone)
+
+--EXERCISE-12(PAGE-70)--
+
+1. Look online for what the pydoc command does.
+The pydoc command is a built-in utility in Python that generates documentation from Python modules, packages, classes, functions, and methods. It provides a way to access and browse documentation directly from the command line or terminal.
+
+2. Use pydoc to also read about open, file, os, and sys. It’s alright if you do not understand those;
+just read through and take notes about interesting things.
+open:
+open function is used to open files in various modes (r, w, a, etc.) and returns a file object.
+It supports reading, writing, and appending to files, as well as handling binary and text files.
+There are additional optional parameters available, such as buffering, encoding, and newline handling.
+It provides a convenient way to work with files in Python.
+file:
+In Python 2.x, file is the built-in type used to represent open files.
+It supports various methods like read(), write(), close(), and so on for file operations.
+Starting from Python 3, the open function directly returns a file object, and the file type is not present.
+os:
+os module provides a way to interact with the operating system and perform various OS-related operations.
+It allows you to manipulate the file system, handle directories, execute system commands, and work with environment variables.
+Some notable functions include os.getcwd() to get the current working directory, os.listdir() to list files in a directory, and os.system() to execute system commands.
+sys:
+sys module provides access to some variables and functions related to the Python interpreter and its environment.
+It allows you to interact with the runtime environment, access command-line arguments, and handle I/O streams.
+Notable attributes include sys.argv to access command-line arguments, sys.stdout and sys.stderr for standard output and error streams, and sys.path for the list of directories where Python looks for modules.
+
+
+--EXERCISE-139PAGE-74)--
+
+1. 
+Try giving fewer than three arguments to your script. See that error you get? See if you can
+explain it.
+If you give fewer than three arguments to a script that expects three arguments, you will encounter an error. This error is typically a "TypeError" or an "IndexError" 
+
+2. Write a script that has fewer arguments and one that has more. Make sure you give the unpacked
+variables good names.
+2.with one argument 
+import sys
+script, arg1 = sys.argv
+print("Argument 1:", arg1)
+with more argument
+import sys
+script, arg1, arg2, arg3 = sys.argv
+print("Argument 1:", arg1)
+print("Argument 2:", arg2)
+print("Argument 3:", arg3)
+
+3. Combine input with argv to make a script that gets more input from a user. Don’t overthink it.
+Just use argv to get something, and input to get something else from the user.
+import sys
+script, arg1 = sys.argv
+print("Argument 1:", arg1)
+user_input = input("Enter something: ")
+print("You entered:", user_input)
+
+4. Remember that modules give you features. Modules. Modules. Remember this because we’ll
+need it later.
+Yes, modules provide additional features and functionality in Python. By importing modules, you can access functions, classes, and variables defined in those modules.
+
+--EXERCISE-14(PAGE-77)--
+
+1. Find out what the games Zork and Adventure were. Try to find a copy and play it.
+Zork and Adventure are classic text-based adventure games.
+
+2. Change the prompt variable to something else entirely.
+To change the prompt variable to something else entirely, you can modify the line prompt = '> ' to assign a different string value.
+
+3. Add another argument and use it in your script, the same way you did in the previous exercise
+with first, second = ARGV.
+To add another argument and use it in your script, you can modify the argv unpacking line.
+
+4. Make sure you understand how I combined a """ style multiline string with the {} format activator
+as the last print
+The combination of the """ style multiline string and the {} format activator in the last print statement allows you to create a formatted multiline string. 
+
+--EXERCISE-15(PAGE-81)--
+
+1. Above each line, write out in English what that line does.
+
+from sys import argv: Imports the argv variable from the sys module.
+script, filename = argv: Unpacks the values from argv and assigns them to the variables script and filename.
+txt = open(filename): Opens the file specified by the filename variable and returns a file object, which is assigned to the txt variable.
+print(f"Here's your file {filename}:"): Prints a formatted string that includes the value of the filename variable.
+print(txt.read()): Reads the contents of the file represented by the txt file object and prints them.
+print("Type the filename again:"): Prints a prompt asking the user to type the filename again.
+file_again = input("> "): Uses the input function to read user input and assigns it to the file_again variable.
+txt_again = open(file_again): Opens the file specified by the file_again variable and returns a file object, which is assigned to the txt_again variable.
+print(txt_again.read()): Reads the contents of the file represented by the txt_again file object and prints them.
+Getting rid of lines 10-15 removes the user input prompts for typing the filename again. The script will only display the contents of the file specified as a command-line argument.
+Using only input for getting the filename requires manual input from the user every time the script runs. Using command-line arguments allows for providing the filename directly when running the script, making it more convenient and automated.
+Starting the python3.6 shell and using the open function allows you to interactively open files and perform operations like read on them without writing a complete script.
+Calling the close() method on file objects (txt.close() and txt_again.close()) ensures that the files are properly closed after use, releasing system resources. It's important to close files when you're done with them to avoid resource leaks and potential issues with file locking.
+
+4.If you remove lines 10-15, which involve user input, the modified script:
+
+python
+Copy code
+from sys import argv
+script, filename = argv
+txt = open(filename)
+print(f"Here's your file {filename}:")
+print(txt.read())
+txt.close()
+
+5. Use only input and try the script that way. Why is one way of getting the filename better than
+another?
+from sys import argv
+script = argv[0]
+filename = input("Enter the filename: ")
+txt = open(filename)
+print(f"Here's your file {filename}:")
+print(txt.read())
+txt.close()
+
+--EXERCISE-16(PAGE-86)--
+
+1.f you do not understand this, go back through and use the comment trick to get it squared away
+in your mind. One simple English comment above each line will help you understand or at least
+let you know what you need to research more.
+The script imports the argv variable from the sys module to accept command-line arguments.
+The script assigns the script name and the filename to the variables script and filename, respectively, using the command-line arguments.
+It displays a message indicating that the file is about to be erased and prompts the user to confirm their choice.
+The script opens the file in write mode ('w') using the open function and assigns the file object to the target variable.
+The file is truncated (emptied) using the truncate method of the file object.
+The script prompts the user to enter three lines of input.
+The entered lines are written to the file using the write method of the file object, with newline characters ('\n') inserted between each line.
+Finally, the script closes the file.
+
+2.. Write a script similar to the last exercise that uses read and argv to read the file you just created.
+To read the file created by the previous script, you can write a similar script that uses read and argv. You would open the file in read mode ('r') and then use the read method to retrieve its contents.
+
+3. There’s too much repetition in this file. Use strings, formats, and escapes to print out line1,
+line2, and line3 with just one target.write() command instead of six.
+target.write(f"{line1}\n{line2}\n{line3}\n")
+This uses string formatting and newline characters to write all three lines with one write command.
+
+4. Find out why we had to pass a 'w' as an extra parameter to open. Hint: open tries to be safe by
+making you explicitly say you want to write a file.
+The 'w' parameter passed to the open function indicates that the file should be opened in write mode. It explicitly specifies that the file will be written to. This helps prevent accidental overwriting of files by forcing the programmer to be explicit about their intentions.
+
+5. If you open the file with 'w' mode, then do you really need the target.truncate()? Read the
+documentation for Python’s open function and see if that’s true.
+If the file is opened in write mode ('w'), the truncate method is unnecessary. When a file is opened in write mode, it is automatically truncated (emptied) by default. Therefore, calling truncate immediately after opening the file is redundant in this case.
+
+--EXERCISE-17(PAGE-89)--
+
+This script is really annoying. There’s no need to ask you before doing the copy, and it prints too
+much out to the screen. Try to make the script more friendly to use by removing features.
+from sys import argv
+from shutil import copyfile
+script, from_file, to_file = argv
+print(f"Copying from {from_file} to {to_file}")
+copyfile(from_file, to_file)
+print("Copy operation completed.")
+
+2. See how short you can make the script. I could make this one line long.
+3. Notice at the end of the What You Should See I used something called cat? It’s an old command
+that ”con*cat*enates” files together, but mostly it’s just an easy way to print a file to the screen.
+Type man cat to read about it.
+The cat command is a Unix command-line utility that concatenates and displays the contents of files. In the context of the example, it is used to display the contents of the output file after copying. You can use the man cat command in a Unix-like terminal to get more information about the cat command.
+
+4. Find out why you had to write out_file.close() in the code.
+In the original code, out_file.close() is called to close the output file after writing to it. It's important to close files when you're done with them to release system resources and ensure that all data is properly written to disk.
+
+5. Go read up on Python’s import statement, and start python3.6 to try it out. Try importing some
+things and see if you can get it right. It’s alright if you do not
+The import statement in Python is used to import modules or specific objects (functions, classes, etc.) from modules. It allows you to access the functionality provided by the imported module. To try it out, you can start the Python interpreter (python3.6 in this case) and use the import statement to import modules or objects
+
+--EXERCISE-18(PAGE-94)--
+
+Create a function checklist for later exercises. Write these checks on an index card and keep it by you
+while you complete the rest of these exercises or until you feel you do not need the index card anymore:
+1. Did you start your function definition with def?
+2. Does your function name have only characters and _ (underscore) characters?
+3. Did you put an open parenthesis ( right after the function name?
+4. Did you put your arguments after the parenthesis ( separated by commas?
+5. Did you make each argument unique (meaning no duplicated names)?
+6. Did you put a close parenthesis and a colon ): after the arguments?
+7. Did you indent all lines of code you want in the function four spaces? No more, no less.
+8. Did you ”end” your function by going back to writing with no indent (dedenting we call it)?
+When you run (”use” or ”call”) a function, check these things:
+1. Did you call/use/run this function by typing its name?
+2. Did you put the ( character after the name to run it?
+3. Did you put the values you want into the parenthesis separated by commas?
+4. Did you end the function call with a ) character?
+
+
+1.Start your function definition with def.
+2.Ensure that your function name consists only of characters and underscores.
+3.Place an open parenthesis (() right after the function name.
+4.List your arguments inside the parenthesis, separated by commas.
+5.Make sure each argument has a unique name (no duplicates).
+6.Close the parenthesis ()) and add a colon (:) after the arguments.
+7.Indent all lines of code within the function by four spaces.
+8."End" the function by dedenting (returning to the previous level of indentation).
+When calling a function:
+
+1.Call/use/run the function by typing its name.
+2.Place an open parenthesis (() after the function name to indicate the function call.
+3.Provide the values or variables you want to pass as arguments inside the parenthesis, separated by commas.
+4.End the function call with a closing parenthesis ()).
+
+--EXERCISE-19(PAGE-97)--
+
+# Define a function named cheese_and_crackers that takes two arguments: cheese_count and boxes_of_crackers
+def cheese_and_crackers(cheese_count, boxes_of_crackers):
+    # Print the number of cheeses
+    print(f"You have {cheese_count} cheeses!")
+    # Print the number of boxes of crackers
+    print(f"You have {boxes_of_crackers} boxes of crackers!")
+    # Print a message about having enough for a party
+    print("Man, that's enough for a party!")
+    # Print a suggestion to get a blanket
+    print("Get a blanket.\n")
+
+# Call the function with numbers directly as arguments
+print("We can just give the function numbers directly:")
+cheese_and_crackers(20, 30)
+
+# Call the function using variables from our script
+print("OR, we can use variables from our script:")
+amount_of_cheese = 10
+amount_of_crackers = 50
+cheese_and_crackers(amount_of_cheese, amount_of_crackers)
+
+# Call the function with math operations inside the arguments
+print("We can even do math inside too:")
+cheese_and_crackers(10 + 20, 5 + 6)
+
+# Call the function with a combination of variables and math operations
+print("And we can combine the two, variables and math:")
+cheese_and_crackers(amount_of_cheese + 100, amount_of_crackers + 1000)
+
+cheese_and_crackers(amount_of_cheese + 100, amount_of_crackers + 1000): Call the function with variables and math operations as arguments.
+print("And we can combine the two, variables and math:"): Print a message about combining variables and math.
+cheese_and_crackers(10 + 20, 5 + 6): Call the function with math operations inside the arguments.
+print("We can even do math inside too:"): Print a message about doing math operations inside the function call.
+
+def calculate_rectangle_area(length, width):
+    area = length * width
+    print(f"The area of the rectangle is {area} square units.")
+
+# Call the function in different ways
+calculate_rectangle_area(5, 6)  # Call with direct values
+calculate_rectangle_area(length=8, width=4)  # Call with named arguments
+length_value = 3
+width_value = 7
+calculate_rectangle_area(length_value, width_value)  # Call with variables
+calculate_rectangle_area(length_value + 2, width_value - 1)  # Call with expressions
+
+--EXERCISE-20(PAGE-101)--
+
+1. Write English comments for each line to understand what that line does.
+
+# Import the argv module from the sys package
+from sys import argv
+# Unpack the command-line arguments into variables script and input_file
+script, input_file = argv
+# Define a function named print_all that takes a file object as an argument
+def print_all(f):
+    # Read and print the contents of the file
+    print(f.read())
+# Define a function named rewind that takes a file object as an argument
+def rewind(f):
+    # Move the file cursor to the beginning of the file
+    f.seek(0)
+# Define a function named print_a_line that takes line_count and a file object as arguments
+def print_a_line(line_count, f):
+    # Print the line number and the current line from the file
+    print(line_count, f.readline())
+# Open the input_file and assign it to current_file
+current_file = open(input_file)
+print("First let's print the whole file:\n")
+# Call the print_all function with current_file as the argument
+print_all(current_file)
+print("Now let's rewind, kind of like a tape.")
+# Call the rewind function with current_file as the argument
+rewind(current_file)
+print("Let's print three lines:")
+current_line = 1
+# Call the print_a_line function with current_line and current_file as arguments
+print_a_line(current_line, current_file)
+current_line += 1  # Increment the value of current_line by 1
+# Call the print_a_line function again with the updated current_line and current_file
+print_a_line(current_line, current_file)
+current_line += 1  # Increment the value of current_line by 1
+# Call the print_a_line function again with the updated current_line and current_file
+print_a_line(current_line, current_file)
+
+2. Each time print_a_line is run, you are passing in a variable current_line. Write out what
+current_line is equal to on each function call, and trace how it becomes line_count in print_a_line.
+current_line is initially set to 1. Each time print_a_line is called, current_line is passed as an argument. The function uses line_count as a parameter to represent the value of current_line within the function scope. So, on each function call, current_line holds the line number, and it becomes line_count in print_a_line.
+
+3. Find each place a function is used, and check its def to make sure that you are giving it the right
+arguments.
+The usage of each function matches its definition, with the appropriate arguments passed.
+
+4. Research online what the seek function for file does. Try pydoc file, and see if you can figure
+it out from there. Then try pydoc file.seek to see what seek does.
+The seek() function is used to change the file position. In this script, f.seek(0) is used to move the file cursor to the beginning of the file (0 represents the offset from the start of the file). seek() allows you to navigate to different positions within the file.
+
+5. Research the shorthand notation +=, and rewrite the script to use += instead.
+The shorthand notation += is used to increment a variable by a certain value. It is equivalent to x = x + value. In this case, current_line += 1 is equivalent to current_line = current_line + 1. It increments the value of current_line by 1.
+
+
+--EXERCISE-21(PAGE-106)--
+
+1.If you aren’t really sure what return does, try writing a few of your own functions and have them
+return some values. You can return anything that you can put to the right of an =.
+The return statement is used to specify the value that a function should output or "return" when it is called. It allows the function to provide a result that can be stored in a variable or used in other computations.
+
+2. At the end of the script is a puzzle. I’m taking the return value of one function and using it as the
+argument of another function. I’m doing this in a chain so that I’m kind of creating a formula using
+the functions. It looks really weird, but if you run the script, you can see the results. What you
+should do is try to figure out the normal formula that would recreate this same set of operations.
+The given puzzle can be broken down into the following formula:
+age + (height - (weight * (iq / 2)))
+
+3. Once you have the formula worked out for the puzzle, get in there and see what happens when
+you modify the parts of the functions. Try to change it on purpose to make another value.
+If you modify the parts of the functions, you will change the values used in the calculations, which will ultimately affect the final result. For example, if you change the values passed to the add, subtract, multiply, or divide functions, the result of the puzzle will be different.
+
+4. Do the inverse. Write a simple formula and use the functions in the same way to calculate it.
+To create an inverse formula, you can start with a simple formula and use the provided functions in a similar nested manner.
+
+--EXERCISE-24(PAGE-120)--
+
+1.Make sure to do your checks: read it backward, read it out loud, and put comments above confusing parts.
+When working with code, it's a good practice to read it backward, read it out loud, and add comments to confusing parts. These approaches help catch errors and improve code comprehension.
+
+2. Break the file on purpose, then run it to see what kinds of errors you get. Make sure you can fix.
+it.
+If you intentionally break the code, you might encounter various errors depending on the type of mistake made. For example, incorrect indentation, missing colons, or undefined variables can result in syntax errors. It's important to carefully review the error messages and make the necessary corrections to fix the code.
+
+
+--EXERCISE-25(PAGE-125)--
+
+1.Take the remaining lines of the What You Should See output and figure out what they are doing.
+Make sure you understand how you are running your functions in the ex25 module.
+The remaining lines of code define the function print_first_and_last_sorted(sentence), which sorts the words in the sentence and then prints the first and last words. This function utilizes the previously defined functions sort_sentence(), print_first_word(), and print_last_word().
+
+2. Try doing this: help(ex25) and also help(ex25.break_words). Notice how you get help for
+your module and how the help is those odd """ strings you put after each function in ex25?
+Those special strings are called documentation comments, and we’ll be seeing more of them.
+To understand how the functions work and how to use them, you can use the help() function. For example, help(ex25) will provide documentation and information about the module ex25. Similarly, help(ex25.break_words) will give information about the break_words() function specifically.
+
+3. Typing ex25. is annoying. A shortcut is to do your import like this: from ex25 import * which
+is like saying, ”Import everything from ex25.” Programmers like saying things backward. Start a
+new session and see how all your functions are right there.
+Using from ex25 import * allows you to import all functions from the ex25 module, so you don't have to prefix the function calls with ex25.. However, it is generally recommended to import only the specific functions you need to avoid namespace collisions and make the code more readable.
+
+4. Try breaking your file and see what it looks like in python when you use it. You will have to quit
+python with quit() to be able to reload it.
+If you make changes to the file ex25.py and save it, you can reload it in the Python interpreter by using quit() to exit the interpreter and then starting a new Python session. This allows you to see the effects of your changes.
+
+
+--EXERCISE-28(PAGE-134)--
+
+< - less than
+> - greater than
+<= - less than or equal to
+>= - greater than or equal to
+is - is
+is not - is not
+
+--EXERCISE-29(PAGE-137)--
+
+1. What do you think the if does to the code under it?
+The if statement in Python is a conditional statement that evaluates a boolean expression. If the expression is true, the code block under the if statement is executed. If the expression is false, the code block is skipped, and execution continues with the next line of code after the if statement.
+
+2. Why does the code under the if need to be indented four spaces?
+The code under the if statement needs to be indented four spaces (or any consistent indentation) to indicate that it is part of the code block associated with the if statement. In Python, indentation is used to define the scope or grouping of statements. By indenting the code, we visually indicate that it belongs to the if block.
+
+3. What happens if it isn’t indented?
+If the code under the if statement is not indented, it will result in a SyntaxError. Python relies on indentation to define the structure of the code, so failing to indent the code properly will violate the syntax rules and lead to an error.
+
+4. Can you put other boolean expressions from Exercise 27 in the if-statement? Try it.
+Yes, you can use other boolean expressions in the if statement. The boolean expression can be any valid expression that evaluates to either True or False. You can use operators such as and, or, not, and comparison operators (<, >, ==, !=, etc.) to form boolean expressions.
+
+5. What happens if you change the initial values for people, cats, and dogs?
+If you change the initial values for people, cats, and dogs, the outcome of the if-statements will depend on the new values. For example, if you increase the value of people, the condition people < cats will become false, and the corresponding print statement will not be executed. Similarly, changing the values of cats and dogs will affect the output based on the conditions defined in the if-statements.
+
+
+--EXERCISE-30(PAGE-139)--
+
+1. Try to guess what elif and else are doing.
+elif is a keyword in Python that stands for "else if." It is used in an if statement to specify an additional condition to check if the previous if condition is false. If the elif condition is true, the code block associated with that condition is executed. If the elif condition is false, the program moves to the next elif or else block, if any.
+
+else is another keyword used in an if statement to specify the code block to execute if all the preceding conditions in the if and elif statements are false. The else block does not have a condition; it serves as the default block to execute when none of the previous conditions evaluate to true.
+
+2. Change the numbers of cars, people, and trucks, and then trace through each if-statement
+to see what will be printed.
+By changing the numbers of cars, people, and trucks, the outcome of the if-statements will change based on the new values. You can trace through each if-statement, starting from the top, and evaluate whether each condition is true or false based on the updated values. Then, the corresponding print statement associated with the first true condition will be executed, or the else block will be executed if all conditions are false.
+
+3. Try some more complex boolean expressions like cars > people or trucks < cars.
+Yes, you can use more complex boolean expressions in the if-statements, such as cars > people or trucks < cars. These expressions will be evaluated based on the current values of the variables. If the expressions evaluate to true, the corresponding code block will be executed.
+
+4. Above each line write an English description of what the line does?
+Line 6: If there are more cars than people, print "We should take the cars."
+Line 8: Otherwise, if there are fewer cars than people, print "We should not take the cars."
+Line 10: If neither of the above conditions is true, print "We can't decide."
+Line 13: If there are more trucks than cars, print "That's too many trucks."
+Line 15: Otherwise, if there are fewer trucks than cars, print "Maybe we could take the trucks."
+Line 17: If neither of the above conditions is true, print "We still can't decide."
+Line 20: If there are more people than trucks, print "Alright, let's just take the trucks."
+Line 22: Otherwise, print "Fine, let's stay home then."
+
+--EXERCISE-31(PAGE-143)--
+
+1.print("You enter a dark room with two doors.")
+print("Do you go through door #1 or door #2?")
+
+door = input("> ")
+
+if door == "1":
+    print("There's a giant bear here eating a cheesecake.")
+    print("What do you do?")
+    print("1. Take the cake.")
+    print("2. Scream at the bear.")
+
+    bear = input("> ")
+
+    if bear == "1":
+        print("The bear eats your face off. Good job!")
+    elif bear == "2":
+        print("The bear gets startled and runs away. Good job!")
+    else:
+        print(f"Well, doing {bear} is probably better.")
+        print("The bear looks at you confused and then leaves.")
+
+elif door == "2":
+    print("You stare into the endless abyss at Cthulhu's retina.")
+    print("What do you see?")
+    print("1. Blueberries.")
+    print("2. Yellow jacket clothespins.")
+    print("3. Understanding revolvers yelling melodies.")
+
+    insanity = input("> ")
+
+    if insanity == "1" or insanity == "2":
+        print("Your body survives powered by a mind of jello.")
+        print("Good job!")
+    else:
+        print("The insanity rots your eyes into a pool of muck.")
+        print("Good job!")
+
+else:
+    print("You stumble around and fall on a knife. Ouch! You survived.")
+    print("You find yourself in a treasure room.")
+    print("What do you do next?")
+    print("1. Take as much treasure as you can carry.")
+    print("2. Look for clues or hidden passages.")
+    
+    treasure_choice = input("> ")
+
+    if treasure_choice == "1":
+        print("You greedily grab as much treasure as you can.")
+        print("Suddenly, the floor collapses beneath you, and you fall into a bottomless pit. Good job!")
+    elif treasure_choice == "2":
+        print("You carefully examine the room and find a hidden passage behind a painting.")
+        print("You enter the passage and discover a secret chamber filled with even more treasure!")
+        print("Congratulations! You've found the hidden treasure!")
+    else:
+        print(f"You stand there contemplating {treasure_choice} and miss out on the treasure. Good job!")
+2.print("Welcome to the Haunted House!")
+print("You find yourself standing in front of a spooky old house.")
+print("Do you dare to enter? (yes/no)")
+
+choice = input("> ")
+
+if choice.lower() == "yes":
+    print("You cautiously open the creaky door and step inside.")
+    print("The door slams shut behind you, trapping you inside.")
+    print("You see two corridors. Which one do you choose?")
+    print("1. The dimly lit corridor.")
+    print("2. The dusty corridor with cobwebs.")
+
+    corridor = input("> ")
+
+    if corridor == "1":
+        print("You walk down the dimly lit corridor.")
+        print("You hear eerie whispers and feel a cold breeze.")
+        print("What do you do?")
+        print("1. Keep walking forward.")
+        print("2. Turn back and run!")
+
+        action = input("> ")
+
+        if action == "1":
+            print("You continue down the corridor and suddenly vanish into thin air. Good job!")
+        elif action == "2":
+            print("You turn back and run, narrowly escaping the haunted house. Congratulations!")
+
+    elif corridor == "2":
+        print("You cautiously proceed down the dusty corridor.")
+        print("You notice a creepy doll sitting on a shelf.")
+        print("What do you do?")
+        print("1. Ignore the doll and keep moving.")
+        print("2. Investigate the doll.")
+
+        doll = input("> ")
+
+        if doll == "1":
+            print("As you ignore the doll, it comes to life and attacks you. Good job!")
+        elif doll == "2":
+            print("You investigate the doll and find a hidden key inside it.")
+            print("You continue exploring the house with the key in hand.")
+
+            # Add more rooms and challenges for the player to explore
+
+        else:
+            print(f"You stand there contemplating {doll} and miss out on the adventure. Good job!")
+
+    else:
+        print(f"You stand there contemplating {corridor} and miss out on the adventure. Good job!")
+
+else:
+    print("You decide not to enter the haunted house. Better safe than sorry!")
+
+
+--EXERCISE-32--
+
+1.Take a look at how you used range. Look up the range function to understand it.
+2. Could you have avoided that for-loop entirely on line 22 and just assigned range(0,6) directly
+to elements?
+3. Find the Python documentation on lists and read about them. What other operations can you do
+to lists besides append?
+
+1.The range function is a built-in function in Python that generates a sequence of numbers. It takes up to three arguments: start, stop, and step. The function returns a sequence of numbers starting from start, incrementing by step, and stopping before reaching stop. In the given code, range(0, 6) generates the numbers 0, 1, 2, 3, 4, 5.
+
+2.Yes, it is possible to assign the result of range(0, 6) directly to the elements list.
+
+3.Accessing Elements: You can access individual elements in a list using indexing. For example, my_list[0] retrieves the first element, and my_list[-1] retrieves the last element.
+Slicing: You can extract a portion of a list using slicing. For example, my_list[1:4] returns a new list containing elements from index 1 to 3.
+Modifying Elements: You can assign new values to specific elements in a list using indexing. For example, my_list[2] = 'new value' changes the value of the element at index 2.
+Length: The len() function can be used to get the length (number of elements) of a list.
+Inserting Elements: The insert() method allows you to insert an element at a specific position in the list.
+Removing Elements: The remove() method removes the first occurrence of a specified element from the list. The pop() method removes and returns an element at a specified index.
+Sorting: The sort() method can be used to sort a list in ascending order. The sorted() function returns a new sorted list without modifying the original list.
+Reversing: The reverse() method reverses the order of elements in a list.
+
+--EXERCISE-33--
+
+Convert this while-loop to a function that you can call, and replace 6 in the test (i < 6) with a
+variable.
+def number_generator(limit, increment):
+    i = 0
+    numbers = []
+
+    while i < limit:
+        print(f"At the top i is {i}")
+        numbers.append(i)
+
+        i = i + increment
+
+    print("Numbers now:", numbers)
+    print(f"At the bottom i is {i}")
+
+    print("The numbers:")
+    for num in numbers:
+        print(num)
+number_generator(6, 1)  
+number_generator(10, 2)  
+
+2. Use this function to rewrite the script to try different numbers.
+def number_generator(limit, increment, step=1):
+    numbers = []
+
+    for i in range(0, limit, increment):
+        print(f"At the top i is {i}")
+        numbers.append(i)
+
+    print("Numbers now:", numbers)
+    print(f"At the bottom i is {limit}")
+
+    print("The numbers:")
+    for num in numbers:
+        print(num)
+number_generator(6, 1) 
+number_generator(10, 2)  
+
+5. Write it to use for-loops and range. Do you need the incrementor in the middle anymore? What
+happens if you do not get rid of it?
+we use the range function with the increment value as the step. The for-loop takes care of incrementing i automatically based on the specified increment.
+If you remove the incrementor in the middle (line 8), the value of i will not be incremented within the loop. This will lead to an infinite loop if the increment is not happening inside the loop. The loop will continue with the same value of i and never reach the limit, resulting in an infinite execution.
+
+
+--EXERCISE-34--
+1. With what you know of the difference between these types of numbers, can you explain why the
+year 2010 in ”January 1, 2010,” really is 2010 and not 2009? (Hint: you can’t pick years at random.)
+To understand why the year 2010 in "January 1, 2010" is indeed 2010 and not 2009, we need to consider how dates are typically represented in the Gregorian calendar system, which is the most widely used calendar system today.
+In the Gregorian calendar, years are counted starting from the year 1 AD (Anno Domini), with no year 0 in between. The transition from 1 BC (Before Christ) to 1 AD does not include a year 0. Therefore, there is a direct transition from 1 BC to 1 AD, without any intervening year 0.
+When we specify a date like "January 1, 2010," it means the first day of the year 2010 in the Gregorian calendar. The year 2010 represents a count of years from the reference point (the year 1 AD). It does not include any year 0 in the calculation.
+
+2. Write some more lists and work out similar indexes until you can translate them.
+"January 1, 2000" - This is the first day of the year 2000, not 1999. It follows the same principle that the year 2000 represents a count of years from the reference point (the year 1 AD).
+"December 31, 1999" - This is the last day of the year 1999, not 2000. The year 1999 is the last complete year before the year 2000.
+
+3. Use Python to check your answers.
+import datetime
+
+date_2010 = datetime.datetime(2010, 1, 1)
+print(date_2010.year)  
+
+date_2000 = datetime.datetime(2000, 1, 1)
+print(date_2000.year) 
+
+date_1999 = datetime.datetime(1999, 12, 31)
+print(date_1999.year) 
+
+--EXERCISE-35--
+
+1.Draw a map of the game and how you flow through it.
+
+2. Fix all of your mistakes, including spelling mistakes.
+3. Write comments for the functions you do not understand.
+from sys import exit.
+
+4. Add more to the game. What can you do to both simplify and expand it?
+
+def gold_room():
+    """This room is full of gold. How much do you take?"""
+    print("This room is full of gold. How much do you take?")
+
+    choice = input("> ")
+    if choice.isdigit():
+        how_much = int(choice)
+    else:
+        dead("Man, learn to type a number.")
+
+    if how_much < 50:
+        print("Nice, you're not greedy, you win!")
+        exit(0)
+    else:
+        dead("You greedy bastard!")
+
+def bear_room():
+    """Encounter a bear and make choices."""
+    print("There is a bear here.")
+    print("The bear has a bunch of honey.")
+    print("The fat bear is in front of another door.")
+    print("How are you going to move the bear?")
+    bear_moved = False
+
+    while True:
+        choice = input("> ")
+
+        if choice == "take honey":
+            dead("The bear looks at you then slaps your face off.")
+        elif choice == "taunt bear" and not bear_moved:
+            print("The bear has moved from the door.")
+            print("You can go through it now.")
+            bear_moved = True
+        elif choice == "taunt bear" and bear_moved:
+            dead("The bear gets pissed off and chews your leg off.")
+        elif choice == "open door" and bear_moved:
+            gold_room()
+        else:
+            print("I have no idea what that means.")
+
+def cthulhu_room():
+    """Encounter Cthulhu and make choices."""
+    print("Here you see the great evil Cthulhu.")
+    print("He, it, whatever stares at you and you go insane.")
+    print("Do you flee for your life or eat your head?")
+
+    choice = input("> ")
+
+    if "flee" in choice:
+        start()
+    elif "head" in choice:
+        dead("Well, that was tasty!")
+    else:
+        cthulhu_room()
+
+def dead(why):
+    """Handles the player's death."""
+    print(why, "Good job!")
+    exit(0)
+
+def start():
+    """The starting point of the game."""
+    print("You are in a dark room.")
+    print("There is a door to your right and left.")
+    print("Which one do you take?")
+
+    choice = input("> ")
+
+    if choice == "left":
+        bear_room()
+    elif choice == "right":
+        cthulhu_room()
+    else:
+
+        dead("You stumble around the room until you starve.")
+
+start()
+
+
+5. The gold_room has a weird way of getting you to type a number. What are all the bugs in this
+way of doing it? Can you make it better than what I’ve written? Look at how int() works for
+clues.
+The code does not handle cases where the player enters a decimal number or a negative number.
+The code does not handle cases where the player enters a non-integer value (e.g., float, string).
+The code does not provide any instructions or guidance to the player on what kind of input is expected (e.g., a prompt).
+def gold_room():
+    """This room is full of gold. How much do you take?"""
+    print("This room is full of gold. How much do you take?")
+
+    while True:
+        choice = input("> ")
+        try:
+            how_much = int(choice)
+            if how_much >= 0:
+                break
+            else:
+                print("Enter a non-negative number.")
+        except ValueError:
+            print("Enter a valid number.")
+
+    if how_much < 50:
+        print("Nice, you're not greedy, you win!")
+        exit(0)
+    else:
+        dead("You greedy bastard!")
+
+
+
+
+--EXERCISE-37--
+
+1. Find out what a ”flow chart” is and draw a few.
+A flowchart is a graphical representation of a process or algorithm, using various symbols and arrows to depict the sequence of steps and decision points. It visually illustrates the flow of control and the logical relationships between different elements in a system or program.
+
+2. If you find errors in code you are reading, try to fix them, and send the author your changes.
+When finding errors in code, it's a good practice to try fixing them and provide feedback to the author. However, as an AI language model, I can't directly send changes to the original author. If you encounter errors in code, you can discuss the issues, suggest improvements, or provide corrected code snippets to help the author understand and resolve the problems.
+
+3. Another technique for when you are not using paper is to put # comments with your notes in the
+code. Sometimes, these could become the actual comments to help the next person.
+Adding comments with notes in the code is an effective technique to provide explanations, clarifications, or reminders for yourself or future developers. These comments can serve as documentation to help understand the code's intent, functionality, or any important details. By including clear and concise comments, you can improve code readability and make it easier for others to maintain or modify the code in the future.
+
+
+--EXERCISE-38--
+1. Take each function that is called, and go through the steps for function calls to translate them to
+what Python does. For example, more_stuff.pop() is pop(more_stuff).
+a) more_stuff.pop() - This is calling the pop() function on the more_stuff list. It removes and returns the last item from the list.
+
+b) stuff.append(next_one) - This is calling the append() function on the stuff list. It adds the next_one item to the end of the list.
+
+c) len(stuff) - This is calling the len() function with the argument stuff. It returns the length (number of items) in the stuff list.
+
+d) print(' '.join(stuff)) - This is calling the join() function with the argument stuff. It joins the items in the stuff list into a single string, separated by spaces.
+
+e) print('#'.join(stuff[3:5])) - This is calling the join() function with the argument stuff[3:5]. It joins the items at indices 3 and 4 in the stuff list into a single string, separated by the '#' character.
+
+2. Translate these two ways to view the function calls in English. For example, more_stuff.pop()
+reads as, ”Call pop on more_stuff.” Meanwhile, pop(more_stuff) means, ”Call pop with argument more_stuff.” Understand how they are really the same thing.
+a) more_stuff.pop() - Call pop on more_stuff.
+b) stuff.append(next_one) - Call append with argument next_one on stuff.
+c) len(stuff) - Call len with argument stuff.
+d) print(' '.join(stuff)) - Call join with argument stuff, using a space as the separator, and print the result.
+e) print('#'.join(stuff[3:5])) - Call join with argument stuff[3:5], using '#' as the separator, and print the result.
+
+
+--EXERCISE-39--
+
+1.Do this same kind of mapping with cities and states/regions in your country or some other country.
+states = {
+    'California': 'CA',
+    'Texas': 'TX',
+    'New York': 'NY',
+    'Florida': 'FL',
+    'Illinois': 'IL'
+}
+
+cities = {
+    'CA': 'Los Angeles',
+    'TX': 'Houston',
+    'NY': 'New York City',
+    'FL': 'Miami',
+    'IL': 'Chicago'
+}
+
+
+2. Find the Python documentation for dictionaries and try to do even more things to them.
+The main operations on a dictionary are storing a value with some key and extracting the value given the key. It is also possible to delete a key:value pair with del. If you store using a key that is already in use, the old value associated with that key is forgotten. It is an error to extract a value using a non-existent key.
+
+3. Find out what you can’t do with dictionaries. A big one is that they do not have order, so try
+playing with that.
+a) Dictionaries do not maintain any specific order: Unlike lists or tuples, dictionaries do not guarantee the order of elements. The order of items in a dictionary can vary and is not necessarily the same as the order in which they were inserted.
+
+b) Dictionaries cannot contain duplicate keys: Each key in a dictionary must be unique. If you try to add a duplicate key, it will overwrite the existing value associated with that key.
+
+c) Dictionaries are mutable: Dictionaries can be modified by adding, updating, or deleting key-value pairs. However, the keys themselves are immutable (usually strings or numbers).
+
+d) Dictionaries do not support indexing: Unlike sequences such as lists or tuples, you cannot access dictionary elements using indexing (e.g., my_dict[0]). Instead, you access values by their corresponding keys (e.g., my_dict['key']).
+
+
+
+
+
